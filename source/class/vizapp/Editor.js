@@ -145,8 +145,8 @@ qx.Class.define("vizapp.Editor",
         var editor = this.__ace = ace.edit(container);
 
         // set javascript mode
-        var JavaScriptMode = require("ace/mode/javascript").Mode;
-        editor.getSession().setMode(new JavaScriptMode());
+        var DotMode = require("ace/mode/dot").Mode;
+        editor.getSession().setMode(new DotMode());
 
         // configure the editor
         var session = editor.getSession();
